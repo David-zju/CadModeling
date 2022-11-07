@@ -136,7 +136,7 @@ CadModelingProject  // 工程目录
 #### 5.实体模型生成操作
 ```C++
 int LoopNum = LoadSketch("sketch_path"); // 读取记录草图信息的文本文件
-SweepSketch(QVector3D(0,0,7),LoopNum); // 对草图进行扫掠操作
+SweepSketch(YourSweepVector,LoopNum); // 对草图进行扫掠操作,扫掠为一条直线，由YourSweepVector定义
 ```
 main函数中调用如上所示函数即可实现扫掠模型的构建。其中，草图信息文本文件的规范样例如下：
 ```C
@@ -160,7 +160,8 @@ main函数中调用如上所示函数即可实现扫掠模型的构建。其中�
 // 注意，节点按照先后顺序排列形成的有向边按照右手定则判定后的方向，就是最后实体中环（面）的方向
 // 如果方向不统一可能会导致绘制失败
 ```
-生成结果如下图所示
-<img src="https://user-images.githubusercontent.com/55902119/200273510-cf2e9c62-a9cd-4b4c-b4ac-976e762697ef.png" alt="drawing" width="400"/>
-<img src="https://user-images.githubusercontent.com/55902119/200273560-0deed07e-84d5-445e-901f-b209dc37924b" alt="drawing" width="400"/>
-
+上述信息生成的草图，以及以向量(-3,1,7)扫掠如上样例草图的生成结果如下图所示<br>
+<img src="https://user-images.githubusercontent.com/55902119/200275715-6704e2a3-8614-491d-b03d-21214856a313.png" alt="drawing" height="400"/>
+<img src="https://user-images.githubusercontent.com/55902119/200273510-cf2e9c62-a9cd-4b4c-b4ac-976e762697ef.png" alt="drawing" height="400"/>
+<img src="https://user-images.githubusercontent.com/55902119/200273560-0deed07e-84d5-445e-901f-b209dc37924b.png" alt="drawing" height="400"/>
+<img src="https://user-images.githubusercontent.com/55902119/200276060-a5eb41d8-6010-432e-b6cd-186c7804c8cb.png" alt="drawing" height="400"/>
