@@ -161,3 +161,5 @@ main函数中调用如上所示函数即可实现扫掠模型的构建。其中�
 // 如果方向不统一可能会导致绘制失败
 ```
 生成结果如下图所示
+![image](https://user-images.githubusercontent.com/55902119/200273510-cf2e9c62-a9cd-4b4c-b4ac-976e762697ef.png)
+![image](https://user-images.githubusercontent.com/55902119/200273560-0deed07e-84d5-445e-901f-b209dc37924b.png)
